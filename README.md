@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  PlayStation 🎮
+  Game Bridge🎮
 </h1>
 
 <p align="center">
@@ -15,14 +15,10 @@
 
 <br>
 
-## 📝 Descrição 
-
-Uma loja da Playstation para vendas de controles.  [playstation-4.vercel.app](https://playstation-4.vercel.app/)
-
-
+## 📝 Preview link : <a href = "https://meet-game-bridge.netlify.app">Click here</a>
 ## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Languages Used:
 
 - HTML
 - CSS
