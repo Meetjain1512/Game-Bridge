@@ -1,0 +1,193 @@
+
+
+/* =========== RESET ============ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+ background-color: var(--background);
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.main{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.section{
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.section-title{
+  color: var(--title-color);
+  font-family: var(--tittle-font);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.section-description{
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--text-font);
+}
+
+.section-span{
+  color: var(--button-color-span);
+}
+
+.sub-title{
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h5-font-size);
+}
+
+
+
+
+/*============ VARIABLES ====================*/
+
+:root{
+  --header-height: 4.5rem;
+
+  --background: hsl(246, 60%, 7%);
+  --background-second:hsl(246, 63%, 12%);
+  --menu-text: hsl(0, 0%, 50%);
+  --menu-color: hsl(0, 0%, 23%);
+  --menu-color-hover: hsl(0, 0%, 100%);
+  --title-color: #FF6700;
+  --text-color: #FF6700;
+  --buttom-color: hsl(247, 15%, 88%);
+  --button-color-span: hsl(245, 59%, 42%);
+  --text-btn-produts: hsl(245, 59%, 42%);
+  --button-color-produts: hsl(0, 0%, 100%);
+  --background-card: hsl(249, 16%, 9%);
+  --card-color: hsl(255, 19%, 13%);
+  --controle-color: radial-gradient(50% 50% at 50% 50%, #20178D 0%, #17124B 100%);
+  --scrollbar-color: #FF6700;
+
+  
+  /*======= FONTS FAMILY =========*/
+  --title-font: 'Poppins', sans-serif;
+  --text-font: 'Roboto', sans-serif;
+
+  /*====== FONTS SIZE ======*/
+  --big-font-size: 2.5rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1rem;
+  --h5-font-size: 0.875rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.75rem;
+  
+  /*====== FONTS PESO (WEIGHT) =======*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  
+  /*======= MARGINS =========*/
+  --mb-0-5: 0.5rem;
+  --mb-0-25: 0.25rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --mb-4: 4rem;
+  
+}
+
+@media (min-width: 768px) {
+ :root{
+  --big-font-size: 5rem;
+  --h1-font-size: 4rem;
+  --h2-font-size: 3rem;
+  --h3-font-size: 2rem;
+  --h5-font-size: 1.2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.75rem;
+ }
+}
+
+.sun-theme{ 
+
+  --background: hsl(0, 0%, 100%);
+  --background-second:hsl(0, 0%, 100%);;
+  --menu-text: hsl(0, 0%, 50%);
+  --menu-color: hsl(0, 35%, 91%);
+  --menu-color-hover: hsl(0, 0%, 0%);
+  --title-color: hsl(0, 0%, 1%);
+  --text-color: hsl(236, 7%, 48%); 
+  --buttom-color: hsl(243, 19%, 77%);
+  --button-color-span: hsl(245, 59%, 42%);
+  --text-btn-produts: hsl(0, 0%, 100%);
+  --button-color-produts: hsl(245, 59%, 42%);
+  --background-card: hsla(0, 0%, 80%, 0.246);
+  --card-color: hsla(0, 0%, 64%, 0.226);
+  --card-border: hsl(0, 0%, 80%);  
+  --controle-color: hsla(0, 0%, 64%, 0.15);
+  --scrollbar-color:hsl(245, 59%, 42%);
+ 
+}
+
+
+/*============ SCROLL BAR =========================*/
+
+body::-webkit-scrollbar {
+  width: 10px;  
+  background-color: var(--scrollbar-color);           
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 1%, 71%);  
+  border-radius: 1px;      
+}
+
+
+/*============ BUTTON SCROLL TOP =========================*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: 1.8rem;
+  z-index: 30;
+  border: 1px solid #20178D;
+  border-radius: 3px;
+  background:#20178D;
+  padding: 0.1rem 0.3rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.3s;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.scrollup.show{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+

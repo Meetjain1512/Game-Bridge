@@ -1,0 +1,25 @@
+/*============ GLOBAL ==========*/
+@import './global/header.css';
+@import './global/global.css';
+@import './global/footer.css';
+
+/*=========== HOME ============*/
+@import './home/home.css';
+
+/*=========== TERMS ============*/
+@import './terms/terms.css';
+
+/*=========== PRIVACY ============*/
+@import './privacy/privacy.css';
+
+/*=========== CONTACT ============*/
+@import './contact/contact.css';
+
+/*=========== ABOUT ============*/
+@import './about/about.css';
+
+/*=========== BUY ============*/
+@import './buy/buy.css';
+
+/*=========== PRODUTS ============*/
+@import './produts/produts.css';
