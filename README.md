@@ -24,7 +24,7 @@ Languages Used:
 - CSS
 - JavaScript
 
-## 📚 Bibliotecas
+## 📚 
 
 - [Google Fonts](https://fonts.google.com/)
 - [ScrollReveal](https://scrollrevealjs.org/)
